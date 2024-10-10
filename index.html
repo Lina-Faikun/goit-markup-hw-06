@@ -43,12 +43,64 @@
         </div>
 
         <div class="mobile-menu" data-menu>
-            <div class="container mobile-menu-container">
-                <button class="mobile-menu-close" data-menu-close></button>
-                <nav class="mobile-menu-nav"></nav>
-                <address></address>
+                <button class="mobile-menu-close" type="button" data-menu-close>
+                <svg class="modal-close-btn" width="8" height="8">
+                  <use href="./images/icons.svg#icon-closesvg"></use>
+                </svg>
+                </button>
+                <nav class="mobile-menu-nav">
+                    <ul class="mobile-menu-content">
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-link" href="./index.html"><span class="studio-adress">Studio</span></a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-link" href="">Portfolio</a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-adress-icons-lists">
+                <address class="mobile-menu-address">
+                        <ul class="mobile-menu-address-list">
+                            <li class="mobile-address-list-item"><a class="mobile-address-list-link" href="tel:+110001111111"></a> <span class="number-adress">+11 (000) 111-11-11</span></li>
+                            <li class="mobile-address-list-item"><a class="mobile-address-list-link"  href="mailto:info@devstudio.com"></a>info@devstudio.com</li>
+                            
+                        </ul>
+                </address>
+                <ul class="mobile-list-icons">
+                    <li class="mobile-list-icons-item">
+                        <a class="mobile-list-icons-links" href="">
+                            <svg class="mobile-menu-icons" width="16" height="16">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-list-icons-item">
+                        <a class="mobile-list-icons-links" href="">
+                            <svg class="mobile-menu-icons" width="16" height="16">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-list-icons-item">
+                        <a class="mobile-list-icons-links" href="">
+                            <svg class="mobile-menu-icons" width="16" height="16">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li  class="mobile-list-icons-item">
+                        <a class="mobile-list-icons-links" href="">
+                            <svg class="mobile-menu-icons" width="16" height="16">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
+         </div>
     </header>
     <main>
        
@@ -307,7 +359,7 @@
 
 
 
-        <section class="portfolio hidden">
+        <section class="portfolio">
             <div class="container portfolio-container">
                 <h2 class="main-title-portfolio">Our Portfolio</h2>
                 <ul class="portfolio-list">
@@ -385,7 +437,7 @@
         </section>
         
     </main>
-<footer class="page-footer hidden">
+<footer class="page-footer">
     <div class="footer-content"> 
        
             <div class="footer-logo-text"> 
@@ -447,7 +499,7 @@
     </div> 
 </footer>
 
-<div class="backdrop is-open hidden" data-modal>
+<div class="backdrop" data-modal>
     <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
             <svg class="modal-close-icon" width="8" height="8">
@@ -494,7 +546,9 @@
         <svg class="order-form-checkbox-icon" width="10" height="8">
             <use href="./images/icons.svg#icon-checksvg"></use>
         </svg>
-    </span> I accept the terms and conditions of the <a class="order-privecy-link" href="">Privacy Policy</a></label>
+    </span>
+    <span class="privacy-mobile">I accept the terms and conditions of the <a class="order-privecy-link" href="">Privacy Policy</a></span> 
+</label>
 </div>
 <button class="order-form-submit-btn" type="submit">Send</button>
 </form>
