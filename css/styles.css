@@ -626,8 +626,8 @@ img {
     }
     .team-item {
             
-        width: calc((100% - 24px) / 2);
-         margin-bottom: 48px;  
+        
+         margin-bottom: 0px;  
     }
         .team-item:last-child {
         
